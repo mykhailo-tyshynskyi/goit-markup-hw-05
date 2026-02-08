@@ -405,11 +405,12 @@ button {
 .page-footer .container-inner {
   display: flex;
   align-items: baseline;
-  column-gap: 80px;
   justify-content: space-between;
+  gap: 80px;
 }
 
 .footer-content {
+  display: block;
   width: 264px;
 }
 
@@ -467,6 +468,9 @@ button {
 .subscribe-box {
   display: block;
   color: #fff;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .subscribe-items {
@@ -629,7 +633,7 @@ button {
   padding-left: 38px;
   padding-right: 11px;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #2e2f42;
   border: 1px solid rgba(46, 47, 66, 0.4);
