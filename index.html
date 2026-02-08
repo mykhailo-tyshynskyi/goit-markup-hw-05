@@ -66,7 +66,7 @@
             <h1 class="main-title-text">
               Effective Solutions for Your Business
             </h1>
-            <button class="order-button" type="button">Order Service</button>
+            <button class="order-button" type="button" data-modal-open>Order Service</button>
           </div>
         </div>
       </section>
@@ -442,11 +442,11 @@
       <!-- #endregion portfolio-->
     </main>
     <!-- #region modal overlay-->
-    <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button class="close-btn" type="button">
+        <button class="close-btn" type="button" data-modal-close>
           <svg class="icon" width="8" height="8">
-            <use class icon href="./images/icons.svg#icon-close"></use>
+            <use class="icon" href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
@@ -483,7 +483,7 @@
             <div>
               <label class="label" for="comment">Comment</label>
               <div>
-                <textarea name="comment" class="input-text" id="comment">
+                <textarea name="comment" class="input-text" id="comment" placeholder="Text input">
                 </textarea>
               </div>
             </div>
@@ -495,11 +495,11 @@
                 id="privacy-policy"
               />
               <label class="privacy-policy" for="privacy-policy">
-                <div class="customized-checkbox">
+                <span class="customized-checkbox">
                   <svg class="icon" width="10" height="8">
                     <use href="./images/icons.svg#icon-check"></use>
                   </svg>
-                </div>
+                </span>
                 I accept the terms and conditions of the
                 <a href="" class="policy-linc">Privacy Policy</a>
               </label>
@@ -580,5 +580,6 @@
       </div>
     </footer>
     <!-- #endregion page footer-->
+  <script src="./js/modal.js"></script>
   </body>
 </html>
